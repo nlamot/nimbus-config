@@ -1,0 +1,11 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: awesome-application
+  namespace: default
+spec:
+  releaseName: awesome-application
+  chart:
+    repository: cm://h.cfcr.io/nlamot/default
+    name: awesome-application
+    version: 0.1.0
